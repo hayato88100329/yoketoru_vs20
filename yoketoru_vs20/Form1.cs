@@ -73,16 +73,16 @@ namespace yoketoru_vs20
                     startButton.Visible = true;
                     copyrightLabel.Visible = true;
                     hiLabel.Visible = true;
-                    gameOverLabel.Visible = true;
-                    titleButton.Visible = true;
-                    clearLabel.Visible = true;
+                    gameOverLabel.Visible = false;
+                    titleButton.Visible = false;
+                    clearLabel.Visible = false;
                     break;
 
                 case State.Game:
-                    titleLabel.Visible = true;
-                    startButton.Visible = true;
-                    copyrightLabel.Visible = true;
-                    hiLabel.Visible = true;
+                    titleLabel.Visible = false;
+                    startButton.Visible = false;
+                    copyrightLabel.Visible =false;
+                    hiLabel.Visible = false;
                     break;
 
             }

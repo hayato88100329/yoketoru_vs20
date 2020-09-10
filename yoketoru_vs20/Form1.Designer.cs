@@ -138,7 +138,7 @@
             // 
             this.titleButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.titleButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.titleButton.Location = new System.Drawing.Point(28, 150);
+            this.titleButton.Location = new System.Drawing.Point(288, 255);
             this.titleButton.Name = "titleButton";
             this.titleButton.Size = new System.Drawing.Size(178, 102);
             this.titleButton.TabIndex = 8;
