@@ -80,7 +80,7 @@
             this.hiLabel.AutoSize = true;
             this.hiLabel.Font = new System.Drawing.Font("MS UI Gothic", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.hiLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.hiLabel.Location = new System.Drawing.Point(230, 170);
+            this.hiLabel.Location = new System.Drawing.Point(227, 156);
             this.hiLabel.Name = "hiLabel";
             this.hiLabel.Size = new System.Drawing.Size(308, 47);
             this.hiLabel.TabIndex = 3;
@@ -102,7 +102,7 @@
             this.startButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.startButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.startButton.ForeColor = System.Drawing.Color.Black;
-            this.startButton.Location = new System.Drawing.Point(275, 255);
+            this.startButton.Location = new System.Drawing.Point(275, 305);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(212, 102);
             this.startButton.TabIndex = 5;
@@ -115,7 +115,7 @@
             this.clearLabel.AutoSize = true;
             this.clearLabel.Font = new System.Drawing.Font("MS UI Gothic", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.clearLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.clearLabel.Location = new System.Drawing.Point(265, 170);
+            this.clearLabel.Location = new System.Drawing.Point(254, 227);
             this.clearLabel.Name = "clearLabel";
             this.clearLabel.Size = new System.Drawing.Size(233, 60);
             this.clearLabel.TabIndex = 6;
@@ -127,7 +127,7 @@
             this.gameOverLabel.AutoSize = true;
             this.gameOverLabel.Font = new System.Drawing.Font("MS UI Gothic", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.gameOverLabel.ForeColor = System.Drawing.Color.Navy;
-            this.gameOverLabel.Location = new System.Drawing.Point(212, 198);
+            this.gameOverLabel.Location = new System.Drawing.Point(209, 227);
             this.gameOverLabel.Name = "gameOverLabel";
             this.gameOverLabel.Size = new System.Drawing.Size(326, 54);
             this.gameOverLabel.TabIndex = 7;
@@ -138,7 +138,7 @@
             // 
             this.titleButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.titleButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.titleButton.Location = new System.Drawing.Point(288, 255);
+            this.titleButton.Location = new System.Drawing.Point(291, 305);
             this.titleButton.Name = "titleButton";
             this.titleButton.Size = new System.Drawing.Size(178, 102);
             this.titleButton.TabIndex = 8;
