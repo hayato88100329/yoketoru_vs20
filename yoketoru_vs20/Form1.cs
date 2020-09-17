@@ -102,7 +102,7 @@ namespace yoketoru_vs20
         {
             if (nextState !=State.None)
             {
-                initroc();
+                initproc();
             }
 
             if (isDebug)
@@ -116,10 +116,22 @@ namespace yoketoru_vs20
                     nextState = State.Clear;
                 }
             }
+            
 
+            if (currentState==State.Game)
+            {
+                UpdatGame();
+            }
         }
 
-        void initroc()
+        void UpdatGame()
+        {
+            Point mp = PointToClient(MousePosition);
+
+            //TODO:mpがプレイヤーの中心になるように設定
+        }
+
+        void initproc()
         {
             currentState = nextState;
             nextState = State.None;
@@ -141,6 +153,12 @@ namespace yoketoru_vs20
                     startButton.Visible = false;
                     copyrightLabel.Visible =false;
                     hiLabel.Visible = false;
+
+                for(int i=EnemyIndex;i<ChrMax;i++)
+                    {
+                        chrs[i].Left = rand.Next(ClientSize.Width - chrs[i].Width);
+                        chrs[i].Left = rand.Next(ClientSize.Height - chrs[i].Height);
+                    }
                     break;
 
                 case State.Gameover:
