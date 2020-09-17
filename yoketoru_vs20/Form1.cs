@@ -124,10 +124,12 @@ namespace yoketoru_vs20
             }
         }
 
+
         void UpdatGame()
         {
             Point mp = PointToClient(MousePosition);
 
+            chrs[i].TextAlign = MiddleCenter;
             //TODO:mpがプレイヤーの中心になるように設定
         }
 
