@@ -80,7 +80,7 @@
             this.hiLabel.AutoSize = true;
             this.hiLabel.Font = new System.Drawing.Font("MS UI Gothic", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.hiLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.hiLabel.Location = new System.Drawing.Point(227, 156);
+            this.hiLabel.Location = new System.Drawing.Point(247, 171);
             this.hiLabel.Name = "hiLabel";
             this.hiLabel.Size = new System.Drawing.Size(308, 47);
             this.hiLabel.TabIndex = 3;
