@@ -162,6 +162,15 @@ namespace yoketoru_vs20
                 {
                     vy[i] = -Math.Abs(vy[i]);
                 }
+
+                //当たり判定
+                if ((mp.X >= chrs[i].Left)
+                 && (mp.X < chrs[i].Right)
+                 && (mp.Y >= chrs[i].Top)
+                 && (mp.Y < chrs[i].Bottom))
+                     {
+                    MessageBox.Show("重なった");
+                }
             }
         }
 
