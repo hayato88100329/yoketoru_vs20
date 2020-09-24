@@ -42,7 +42,7 @@ namespace yoketoru_vs20
         State currentState = State.None;
         State nextState = State.Title;
 
-        const int SpeedMax = 20;
+        const int SpeedMax = 10;
         int[] vx = new int[ChrMax];
         int[] vy = new int[ChrMax];
 
@@ -101,7 +101,7 @@ namespace yoketoru_vs20
 
         private void titleButton_Click(object sender, EventArgs e)
         {
-
+            nextState = State.Title;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -120,6 +120,10 @@ namespace yoketoru_vs20
                 else if(GetAsyncKeyState((int)Keys.C)<0)
                 {
                     nextState = State.Clear;
+
+                    
+
+                   
                 }
             }
             
@@ -163,14 +167,28 @@ namespace yoketoru_vs20
                     vy[i] = -Math.Abs(vy[i]);
                 }
 
-                //当たり判定
-                if ((mp.X >= chrs[i].Left)
+                    //当たり判定
+                    if ((mp.X >= chrs[i].Left)
                  && (mp.X < chrs[i].Right)
                  && (mp.Y >= chrs[i].Top)
                  && (mp.Y < chrs[i].Bottom))
                      {
-                    MessageBox.Show("重なった");
+                    // MessageBox.Show("重なった");
+                    //敵か？
+                    if (i < ItemIndex)
+                    {
+                        nextState = State.Gameover;
+                    }
+                    else
+                    {
+                        //アイテム
+                        chrs[i].Visible = false;
+
+
+                    }
+
                 }
+                
             }
         }
 
@@ -224,6 +242,7 @@ namespace yoketoru_vs20
         private void startButton_Click(object sender, EventArgs e)
         {
             nextState = State.Game;
+            
         }
 
             
